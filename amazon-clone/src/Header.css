@@ -7,11 +7,38 @@
 .nav-bar {
   background-color: black;
   display: flex;
-
   color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  object-fit: cover;
+}
+
+input {
+  width: 600px;
+}
+.search-cont {
+  display: flex;
+  max-height: 40px;
+}
+
+.search-icon-cont {
+  background-color: orange;
 }
 
 .header-options {
   display: flex;
   justify-content: space-evenly;
+}
+
+.h-option {
+  margin-left: 30px;
+}
+
+.line-one {
+  font-weight: 100;
+  font-size: 15px;
 }
