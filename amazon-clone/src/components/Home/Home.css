@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-top,
+.home {
+  width: 100%;
+  background-color: green;
+}
+
+.home-top-bkg {
+  width: 100%;
+  object-fit: cover;
+}
