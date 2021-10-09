@@ -4,13 +4,32 @@
   padding: 0;
 }
 
-.home-top,
-.home {
+.rows {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-top {
   width: 100%;
-  background-color: green;
+  background: rgb(254, 218, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 218, 0, 1) 0%,
+    rgba(255, 235, 112, 1) 100%
+  );
+  z-index: -1;
+  margin-bottom: -100px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .home-top-bkg {
   width: 100%;
-  object-fit: cover;
+  height: 500px;
+  object-fit: contain;
+  z-index: -1;
+  margin-bottom: -100px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
