@@ -7,10 +7,17 @@
 .cart-product {
   background-color: white;
   min-height: 200px;
-  display: flex;
-  align-items: center;
   max-width: 80%;
   margin: 24px 0 24px 24px;
+  padding: 24px;
+}
+
+.outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .cart-title-cont {
@@ -24,6 +31,7 @@
 
 .cart-rating-cont {
   display: flex;
+  margin-left: 10px;
 }
 
 .cart-d {
@@ -31,7 +39,7 @@
 }
 
 .cart-rm-btn {
-  background-color: rgba(254, 218, 0, 1);
+  background-color: rgb(255, 216, 20);
   padding: 4px 8px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -40,7 +48,7 @@
   -o-border-radius: 4px;
   border: none;
   outline: none;
-  margin: 12px;
+  margin: 24px 0 12px 12px;
 }
 
 .cart-rm-btn:hover {

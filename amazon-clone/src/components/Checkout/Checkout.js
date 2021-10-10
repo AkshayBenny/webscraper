@@ -1,6 +1,7 @@
 import React from "react";
 import "./Checkout.css";
 import CartProduct from "./CartProduct/CartProduct";
+import Subtotal from "./Subtotal/Subtotal";
 
 function Checkout() {
   return (
@@ -12,6 +13,7 @@ function Checkout() {
         price={600}
         img="https://m.media-amazon.com/images/I/914o5xV1+8L._AC_AA180_.jpg"
       />
+      <Subtotal />
     </div>
   );
 }
