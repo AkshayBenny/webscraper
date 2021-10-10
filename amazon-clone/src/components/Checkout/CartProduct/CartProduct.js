@@ -17,7 +17,7 @@ function CartProduct({ img, title, rating, price }) {
           <p className="cart-price">$ {price}</p>
         </div>
 
-        <div className="cart-rating-cont cart-d">
+        <div className="cart-rating-cont">
           {Array(rating)
             .fill()
             .map((_, i) => (
