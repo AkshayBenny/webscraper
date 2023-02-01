@@ -18,7 +18,7 @@ class CourseSpider(Spider):
 
             # Attribute selector for css
             # This selects a tags that has got a title attribute
-            title_selected_with_css_attribute = course.css('a[title ]').get()
+            title_selected_with_css_attribute = course.css('a[title]').get()
 
             print(title_selected_with_css_attribute)
             
