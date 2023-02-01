@@ -13,7 +13,14 @@ class CourseSpider(Spider):
             price_selected_with_css = course.css('p.price_color::text').get()
 
             #Or use xpath to select the elements
-            title_selected_with_xpath = course.xpath('//h3/a/text()').get() 
+            title_selected_with_xpath = course.xpath('//h3/a/text()').get()
+            price_selected_with_xpath = course.xpath("//p[@class='price_color']/text()").get() 
+
+            # Attribute selector for css
+            # This selects a tags that has got a title attribute
+            title_selected_with_css_attribute = course.css('a[title ]').get()
+
+            print(title_selected_with_css_attribute)
             
             yield {
                 "title_selected_with_css":title_selected_with_css,
