@@ -1,40 +1,82 @@
 [
-	{ "title": "A Light in the ...", "price": "\n                    " },
-	{ "title": "Tipping the Velvet", "price": "\n                    " },
-	{ "title": "Soumission", "price": "\n                    " },
-	{ "title": "Sharp Objects", "price": "\n                    " },
 	{
-		"title": "Sapiens: A Brief History ...",
-		"price": "\n                    "
-	},
-	{ "title": "The Requiem Red", "price": "\n                    " },
-	{
-		"title": "The Dirty Little Secrets ...",
-		"price": "\n                    "
-	},
-	{ "title": "The Coming Woman: A ...", "price": "\n                    " },
-	{ "title": "The Boys in the ...", "price": "\n                    " },
-	{ "title": "The Black Maria", "price": "\n                    " },
-	{
-		"title": "Starving Hearts (Triangular Trade ...",
-		"price": "\n                    "
-	},
-	{ "title": "Shakespeare's Sonnets", "price": "\n                    " },
-	{ "title": "Set Me Free", "price": "\n                    " },
-	{
-		"title": "Scott Pilgrim's Precious Little ...",
-		"price": "\n                    "
-	},
-	{ "title": "Rip it Up and ...", "price": "\n                    " },
-	{ "title": "Our Band Could Be ...", "price": "\n                    " },
-	{ "title": "Olio", "price": "\n                    " },
-	{
-		"title": "Mesaerion: The Best Science ...",
-		"price": "\n                    "
+		"title_selected_with_css": "A Light in the ...",
+		"price_selected_with_css": "\u00a351.77"
 	},
 	{
-		"title": "Libertarianism for Beginners",
-		"price": "\n                    "
+		"title_selected_with_css": "Tipping the Velvet",
+		"price_selected_with_css": "\u00a353.74"
 	},
-	{ "title": "It's Only the Himalayas", "price": "\n                    " }
+	{
+		"title_selected_with_css": "Soumission",
+		"price_selected_with_css": "\u00a350.10"
+	},
+	{
+		"title_selected_with_css": "Sharp Objects",
+		"price_selected_with_css": "\u00a347.82"
+	},
+	{
+		"title_selected_with_css": "Sapiens: A Brief History ...",
+		"price_selected_with_css": "\u00a354.23"
+	},
+	{
+		"title_selected_with_css": "The Requiem Red",
+		"price_selected_with_css": "\u00a322.65"
+	},
+	{
+		"title_selected_with_css": "The Dirty Little Secrets ...",
+		"price_selected_with_css": "\u00a333.34"
+	},
+	{
+		"title_selected_with_css": "The Coming Woman: A ...",
+		"price_selected_with_css": "\u00a317.93"
+	},
+	{
+		"title_selected_with_css": "The Boys in the ...",
+		"price_selected_with_css": "\u00a322.60"
+	},
+	{
+		"title_selected_with_css": "The Black Maria",
+		"price_selected_with_css": "\u00a352.15"
+	},
+	{
+		"title_selected_with_css": "Starving Hearts (Triangular Trade ...",
+		"price_selected_with_css": "\u00a313.99"
+	},
+	{
+		"title_selected_with_css": "Shakespeare's Sonnets",
+		"price_selected_with_css": "\u00a320.66"
+	},
+	{
+		"title_selected_with_css": "Set Me Free",
+		"price_selected_with_css": "\u00a317.46"
+	},
+	{
+		"title_selected_with_css": "Scott Pilgrim's Precious Little ...",
+		"price_selected_with_css": "\u00a352.29"
+	},
+	{
+		"title_selected_with_css": "Rip it Up and ...",
+		"price_selected_with_css": "\u00a335.02"
+	},
+	{
+		"title_selected_with_css": "Our Band Could Be ...",
+		"price_selected_with_css": "\u00a357.25"
+	},
+	{
+		"title_selected_with_css": "Olio",
+		"price_selected_with_css": "\u00a323.88"
+	},
+	{
+		"title_selected_with_css": "Mesaerion: The Best Science ...",
+		"price_selected_with_css": "\u00a337.59"
+	},
+	{
+		"title_selected_with_css": "Libertarianism for Beginners",
+		"price_selected_with_css": "\u00a351.33"
+	},
+	{
+		"title_selected_with_css": "It's Only the Himalayas",
+		"price_selected_with_css": "\u00a345.17"
+	}
 ]
