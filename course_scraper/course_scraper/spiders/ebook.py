@@ -3,6 +3,9 @@ from scrapy import Spider
 # OR
 from ..items import EbookScraperItem
 
+def get_price_as_float(price):
+    return float(price[1:])
+
 class EbookSpider(Spider):
     name="ebook"
     start_urls = ['https://books.toscrape.com']
@@ -15,14 +18,13 @@ class EbookSpider(Spider):
             # title = ebook.css('h3 a::attr(title)').get()
             # OR
             ebook_item = EbookScraperItem()
-            ebook_item['title'] = response.css('article.product_pod')
-            ebook_item['price'] = response.css('article.product_pod')
+            ebook_item['title'] = ebook.css('h3 a::attr(title)').get()
+            ebook_item['price'] = ebook.css('p.price_color::text').get() 
             # 
             # 
             # OR 
-            title2 = ebook.css('h3 a').attrib['title']
-            
-            price = ebook.css('p.price_color::text').get()
+            # title2 = ebook.css('h3 a').attrib['title']
+            # price = ebook.css('p.price_color::text').get()
             # yield {
             #     'title': title,
             #     'price': price
