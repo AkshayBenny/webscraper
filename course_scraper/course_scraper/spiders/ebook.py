@@ -13,13 +13,23 @@ class EbookSpider(Spider):
 
     def __init__(self):
         super().__init__()
-        self.page_count = 0
+        self.page_count = 1
+        self.total_pages = 5
+
+    def start_requests(self):
+        base_url ='https://books.toscrape.com/catalogue/category/books/sequential-art_5/'
+        while self.page_count <= self.total_pages:
+            yield Request(
+                f"{base_url}/page-{self.page_count}.html",
+            )
+            self.page_count += 1
+            
 
     cols = ['title','price']
     def parse(self, response):
-        print('---------------------------------------------')
+       
         ebooks = response.css('article')
-        self.page_count += 1
+        # self.page_count += 1
         for ebook in ebooks:
             loader = ItemLoader(item=EbookScraperItem(), selector=ebook)
             # loader.add_value('title',ebook.css('h3 a::attr(title)').get())
@@ -27,14 +37,14 @@ class EbookSpider(Spider):
             loader.add_value('price', ebook.css('p.price_color::text').get())
 
             yield loader.load_item()
-        print('Page Count: >>>>>>>>>>>>>>>>>>>>>>>>>>.', self.page_count)
+
         next_btn = response.css('li.next a').get()
-       
+
         if(next_btn):
             next_url = response.css('li.next a::attr(href)').get()
             next_page_complete_url = self.start_urls[0] + '/' + next_url
             yield Request(url=next_page_complete_url)
-       
 
-      
+
+    
         
