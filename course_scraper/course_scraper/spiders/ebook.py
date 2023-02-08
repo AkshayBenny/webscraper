@@ -10,6 +10,7 @@ def get_price_as_float(price):
 class EbookSpider(Spider):
     name="ebook"
     start_urls = ['https://books.toscrape.com']
+    cols = ['title','price']
     def parse(self, response):
         print('---------------------------------------------')
         ebooks = response.css('article')
