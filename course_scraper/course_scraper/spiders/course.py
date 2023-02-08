@@ -1,6 +1,5 @@
 from scrapy import Spider
-
-class EbookSpider(Spider):
+class CourseSpider(Spider):
     name="course"
     start_urls = ['https://books.toscrape.com']
     def parse(self, response):
